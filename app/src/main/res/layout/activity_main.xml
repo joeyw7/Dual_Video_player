@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="0dp"
+        android:layout_height="257dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <Button
+        android:id="@+id/openFileBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN FILE"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <Button
+        android:id="@+id/openFileBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN FILE"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <ImageButton
+        android:id="@+id/closeBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/videoView1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/closeBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/videoView2"
+        app:layout_constraintTop_toTopOf="@+id/videoView2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/videoConstraint1"
+        android:layout_width="406dp"
+        android:layout_height="238dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/videoView1"
+            android:layout_width="0dp"
+            android:layout_height="257dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteY="0dp" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
